@@ -1,0 +1,23 @@
+{
+  "name": "mentorship-platform-capstone-project-module1",
+  "version": "1.0.0",
+  "description": "Find-a-Mentor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/denscholar/Mentorship-platform-capstone-project-module1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/denscholar/Mentorship-platform-capstone-project-module1/issues"
+  },
+  "homepage": "https://github.com/denscholar/Mentorship-platform-capstone-project-module1#readme",
+  "devDependencies": {
+    "hint": "^6.1.9"
+  }
+}
