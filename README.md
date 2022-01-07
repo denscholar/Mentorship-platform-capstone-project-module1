@@ -22,6 +22,22 @@ If you installed git you can clone the code to your machine, or download a ZIP o
 * HTML
 * GitHub
 
+## Authors
+
+- GitHub: [@denscholar](https://github.com/denscholar)
+- Twitter: [@denscholar](https://twitter.com/dennisakagha)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/dennisakagha/)
+
 ## Contributor
 Below are the following contributors to this project for the time being:
 1. Dennis Akagha - Project initiator
+
+## Contributing 
+Contributions, issues, and feature requests are welcome!
+
+## Acknowledgments
+- Original design idea by [Cindy Shin in Behance.](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
+- Hat tip to anyone contributed one way or the other.
+
+## Project Link 
+[Link to published website](https://denscholar.github.io/Mentorship-platform-capstone-project-module1/).
