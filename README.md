@@ -38,3 +38,6 @@ Contributions, issues, and feature requests are welcome!
 ## Acknowledgments
 - Original design idea by [Cindy Shin in Behance.](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
 - Hat tip to anyone contributed one way or the other.
+
+## Project Link 
+[Link to published website](https://denscholar.github.io/Mentorship-platform-capstone-project-module1/).
