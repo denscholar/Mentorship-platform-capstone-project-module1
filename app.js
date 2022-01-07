@@ -27,7 +27,7 @@ const data = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ipsam quae perspiciatis placeat odio laborum accusamus reiciendis? ',
   },
   {
-    name: 'Dennis Akagha',
+    name: 'Felix Iziomoh',
     profileImage: './images/speakers/speaker2.png',
     bgImage: './images/draught.PNG',
     shortDesc: 'Neque esse modi, dolor quis assumenda delectus error',
@@ -35,7 +35,7 @@ const data = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ipsam quae perspiciatis placeat odio laborum accusamus reiciendis? ',
   },
   {
-    name: 'Dennis Akagha',
+    name: 'Chidimma Azubuko',
     profileImage: './images/speakers/speaker3.png',
     bgImage: './images/draught.PNG',
     shortDesc: 'Neque esse modi, dolor quis assumenda delectus error',
@@ -43,7 +43,7 @@ const data = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ipsam quae perspiciatis placeat odio laborum accusamus reiciendis? ',
   },
   {
-    name: 'Dennis Akagha',
+    name: 'Jane Doe',
     profileImage: './images/speakers/speaker4.png',
     bgImage: './images/draught.PNG',
     shortDesc: 'Neque esse modi, dolor quis assumenda delectus error',
@@ -51,7 +51,7 @@ const data = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ipsam quae perspiciatis placeat odio laborum accusamus reiciendis? ',
   },
   {
-    name: 'Dennis Akagha',
+    name: 'Scholastica Flaw',
     profileImage: './images/speakers/speaker5.png',
     bgImage: './images/draught.PNG',
     shortDesc: 'Neque esse modi, dolor quis assumenda delectus error',
@@ -59,7 +59,7 @@ const data = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ipsam quae perspiciatis placeat odio laborum accusamus reiciendis? ',
   },
   {
-    name: 'Dennis Akagha',
+    name: 'John Doe',
     profileImage: './images/speakers/speaker6.png',
     bgImage: './images/draught.PNG',
     shortDesc: 'Neque esse modi, dolor quis assumenda delectus error',
@@ -100,7 +100,7 @@ const icon = document.createElement('i');
 icon.className = 'fas fa-chevron-down';
 seeMoreText.appendChild(icon);
 
-function mentorsData() {
+const mentorsData = () => {
   for (let i = 0; i < data.length; i++) {
     const newMentors = `
   <div class="mentors-grid-items">
@@ -119,10 +119,10 @@ function mentorsData() {
     actualMentors.innerHTML = newMentors;
     grid.appendChild(actualMentors);
   }
-}
+};
 
-function mentorsData2() {
-  for (let i = 0; i < 2; i++) {
+const mentorsData2 = () => {
+  for (let i = 0; i < data.length - 4; i++) {
     const newMentors = `
   <div class="mentors-grid-items">
       <div class="img-wrapper">
@@ -140,14 +140,14 @@ function mentorsData2() {
     actualMentors.innerHTML = newMentors;
     grid.appendChild(actualMentors);
   }
-}
+};
 
-function screeSizes() {
+const screeSizes = () => {
   if (window.innerWidth < 768) {
     mentorsData2();
   } else if (window.innerWidth > 768) {
     mentorsData();
   }
-}
+};
 
 screeSizes();
