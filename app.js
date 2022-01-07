@@ -89,6 +89,7 @@ container.appendChild(grid);
 
 const button = document.createElement('button');
 button.className = 'see-more';
+button.type = 'button';
 container.appendChild(button);
 
 const seeMoreText = document.createElement('h3');
