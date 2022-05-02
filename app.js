@@ -1,7 +1,13 @@
+/* eslint-disable no-console */
+/* eslint-disable func-names */
+/* eslint-disable vars-on-top */
 /* eslint-disable no-plusplus */
 const toggleBar = document.querySelector('.toggle-menu');
 const menuBar = document.querySelector('.hidden');
 const closeBar = document.querySelector('.close-mobile-menu');
+// const btnRegister = document.querySelector('.btn-register');
+// const modalRegister = document.querySelector('.bg-modal');
+// const closeModal = document.querySelector('.close');
 
 toggleBar.addEventListener('click', () => {
   if (menuBar.style.display === 'none') {
@@ -151,3 +157,26 @@ const screeSizes = () => {
 };
 
 screeSizes();
+
+// modal
+// btnRegister.addEventListener('click', () => {
+//   modalRegister.style.display = 'flex';
+// });
+
+// closeModal.addEventListener('click', () => {
+//   modalRegister.style.display = 'none';
+// });
+
+// eventbright
+
+const exampleCallback = function () {
+  console.log('Order complete!');
+};
+
+window.EBWidgets.createWidget({
+  widgetType: 'checkout',
+  eventId: '331748738407',
+  modal: true,
+  modalTriggerElementId: 'eventbrite-widget-modal-trigger-331748738407',
+  onOrderComplete: exampleCallback,
+});

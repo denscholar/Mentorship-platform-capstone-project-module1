@@ -11,11 +11,13 @@
       src="https://kit.fontawesome.com/a70cf7601d.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
     <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/form.css">
     <title>Home Page</title>
   </head>
   <body>
-    <section class="header">
+    <section class="header" >
       <header class="header">
         <div class="top-bar">
           <ul>
@@ -34,26 +36,29 @@
         <nav class="nav">
           <div class="logo">
             <a href="./index.html"
-              ><h2>find<span>MENTOR</span></h2></a
+              ><h2>sied<span>HUB</span></h2></a
             >
           </div>
           <div class="toggle-menu">
             <i class="fas fa-bars"></i>
           </div>
           <ul class="menu-desktop">
+            <noscript><a href="https://www.eventbrite.com/e/becoming-a-you-in-the-industry-tickets-331748738407" rel="noopener noreferrer" target="_blank">Buy Tickets on Eventbrite</a></noscript>
             <li><a class="link active" href="./about.html">About</a></li>
             <li><a class="link" href="">Programs</a></li>
-            <li><a class="link" href="">Join</a></li>
+            <!-- <li><a class="link" href="">Join</a></li>
             <li><a class="link" href="">Event</a></li>
-            <li><a class="link" href="">Blog</a></li>
-            <li><a class="link" href="">DevProject</a></li>
+            <li><a class="link" href="">Blog</a></li> -->
+            <!-- <li><button class="btn-register" href="">Register Here</button></li> -->
+            <li><button id="eventbrite-widget-modal-trigger-331748738407" type="button" class="btn-register">Buy Tickets</button></li>
+            
           </ul>
         </nav>
         <!-- mobile menu -->
         <nav class="menu-bar hidden">
           <div class="logo-mobile">
             <a href="./index.html"
-              ><h2>find<span>MENTOR</span></h2></a
+              ><h2>sied<span>HUB</span></h2></a
             >
           </div>
           <div class="close-mobile-menu">
@@ -62,16 +67,16 @@
           <ul class="mobile-menu-bar">
             <li><a class="nav-link active" href="./about.html">About</a></li>
             <li><a class="nav-link" href="">Programs</a></li>
-            <li><a class="nav-link" href="">Join</a></li>
+            <!-- <li><a class="nav-link" href="">Join</a></li>
             <li><a class="nav-link" href="">Event</a></li>
-            <li><a class="nav-link" href="">Blog</a></li>
-            <li><a class="nav-link" href="">DevProjects</a></li>
+            <li><a class="nav-link" href="">Blog</a></li> -->
+            <li><button id="eventbrite-widget-modal-trigger-331748738407" type="button" class="btn-register">Register here</button></li>
           </ul>
         </nav>
       </header>
     </section>
     <!-- Hero Section -->
-    <section class="hero-section">
+    <section class="hero-section" id="particles-js">
       <div class="hero-header">
         <h1 class="hero-title">
           <span>Hello Nigeria!</span><br />Connecting developers with mentors
@@ -85,55 +90,35 @@
       </div>
       <div class="find-dev">
         <h2>Find a developer for live mentorship</h2>
-        <button type="button">GET HELP NOW</button>
+        <!-- <button type="button">REGISTER HERE</button> -->
+      </div>
+    </section>
+    <!-- Attendees -->
+    <section class="attendee_count">
+      <div class="counter_grid">
+        <div class="counter-list">
+          <h2>100</h2>
+          <p>Attendees</p>
+        </div>
+        <div class="counter-list">
+          <h2>5+</h2>
+          <p>Speakers</p>
+        </div>
+        <div class="counter-list">
+          <h2>20+</h2>
+          <p>Volunteers</p>
+        </div>
+        <div class="counter-list">
+          <h2>500</h2>
+          <p>Attendees</p>
+        </div>
       </div>
     </section>
     <!-- Program Section -->
     <section class="program-section">
       <h2>How to Find a Mentor</h2>
       <p class="line"></p>
-      <div class="program-grid">
-        <div class="program-section-items">
-          <img src="./images/icons/lecture.png" alt="lecture icon" />
-          <h3>Share details</h3>
-          <p>
-            Choose between getting help instantly, or scheduling a session for a
-            mentor.
-          </p>
-        </div>
-        <div class="program-section-items">
-          <img src="./images/icons/exhibition.png" alt="exhibition icon" />
-          <h3>Find a mentor</h3>
-          <p>
-            Find and instantly chat with the right mentor that matches your
-            needs and request.
-          </p>
-        </div>
-        <div class="program-section-items">
-          <img src="./images/icons/forum.png" alt="forum icon" />
-          <h3>Join Forum</h3>
-          <p>
-            You can leverage on our mentors and mentees forum for a quick
-            response.
-          </p>
-        </div>
-        <div class="program-section-items">
-          <img src="./images/icons/ignite.png" alt="ignite icon" />
-          <h3>Schedule</h3>
-          <p>
-            No extra tabs! Start or schedule a session directly in the chat
-            window.
-          </p>
-        </div>
-        <div class="program-section-items">
-          <img src="./images/icons/workshop.png" alt="workshop icon" />
-          <h3>Get the help</h3>
-          <p>
-            Don't get stuck again! Learn the best practices from experts all for
-            FREE.
-          </p>
-        </div>
-      </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/AQMeVZIkybg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <div class="inner-div">
         <p>Join CC Global Summit 2015</p>
       </div>
@@ -175,6 +160,7 @@
         />
       </div>
     </section>
+   
     <!-- Footer -->
     <footer>
       <div class="footer-flex">
@@ -185,8 +171,35 @@
           We want to hear your thoughts! Feel free to join our Slack
           Organization or send us an email at admin@findamentor.org
         </p>
+        
       </div>
     </footer>
+
+     <!-- Registration Modal -->
+     <div class="bg-modal">
+      <div class="modal-content">
+        <div class="close">+</div>
+        <form id="fs-frm" name="registration-form" accept-charset="utf-8" action="https://formspree.io/YOUR_FORM_ID" method="post">
+          <div id="fs-frm-inputs">
+            <label for="full-name">Full Name</label>
+            <input type="text" name="name" id="full-name" placeholder="Full Names" required="">
+            <!-- <label for="company">Company</label>
+            <input type="text" name="company" id="company" placeholder="Seltz" required=""> -->
+            <label for="email-address">Email Address</label>
+            <input type="email" name="_replyto" id="email-address" placeholder="email-address" required="">
+            <label for="message">Questions for our speakers? (Optional)</label>
+            <textarea rows="5" name="message" id="message" placeholder="Send questions in advance and we will cover them in the Q&A"></textarea>
+            <input type="hidden" name="_subject" id="email-subject" value="Registration Form Submission">
+            <input type="submit" class="button" value="Register">
+          </div>
+        </form>
+      </div>
+      
+    </div>
+
+    <script src="./particles.js"></script>
+    <script src="./app_particles.js"></script>
     <script src="./app.js"></script>
+
   </body>
 </html>

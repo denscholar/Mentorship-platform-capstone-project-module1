@@ -12,8 +12,10 @@
 }
 
 body {
-  background: url("../images/mobile_intro_bg.png") no-repeat center center;
+  /* background: url("../images/mobile_intro_bg.png") no-repeat center center; */
   background-position: 60% -9%;
+  background-color: #4e4d4d;
+  background-repeat: no-repeat;
 }
 
 /* Header section */
@@ -30,6 +32,15 @@ body {
 
 .hero-section {
   padding: 0 25px;
+  position: relative;
+}
+
+.particles-js-canvas-el {
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  width: 80%;
+  height: 100%;
 }
 
 /* mobile menu */
@@ -164,13 +175,45 @@ body {
   background-color: #ec5242;
   color: white;
   font-weight: 500;
+  cursor: pointer;
 }
+
+/* counter */
+
+/* .attendee_count .counter_grid{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  gap: 5em;
+  background: #1B3A4C;
+}
+
+.attendee_count h2{
+  font-size: 55px;
+  color: white;
+  font-weight: bolder;
+}
+
+.attendee_count p{
+  font-size: 15px;
+  text-align: center;
+  color: white;
+} */
 
 /* Program Section */
 
 .program-section {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.603)), url("../images/bg-image.jpg");
   padding: 0 0 30px 0;
+}
+
+.program-section iframe {
+  width: 20em;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 .program-section h2 {
@@ -392,7 +435,7 @@ footer {
     justify-content: flex-start;
     align-items: center;
     align-content: center;
-    padding: 20px 170px;
+    padding: 10px 170px;
     box-shadow: 5px 5px 50px #aaa;
   }
 
@@ -403,7 +446,12 @@ footer {
   .logo span {
     font-family: "COCOGOOSE", sans-serif;
     color: #ec5242;
-    font-size: 22px;
+    font-size: 35px;
+  }
+
+  .logo h2 {
+    font-size: 30px;
+    font-weight: bold;
   }
 
   .inner-div2 a {
@@ -413,18 +461,21 @@ footer {
     text-decoration: underline;
   }
 
-  .nav ul li:last-child a {
+  .nav ul li:last-child button {
     border: 3px solid #ec5242;
     padding: 10px;
+    font-size: 15px;
   }
 
   /* Hero Section */
 
   .hero-section {
-    background: url("../images/main_big.png");
+    /* background: url("../images/main_big.png"); */
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 7.5em;
+    padding-bottom: 3em;
+    background-color: #666d7e;
   }
 
   .hero-section .hero-header .hero-title {
@@ -433,6 +484,11 @@ footer {
     padding: 50px 0 0 150px;
     text-transform: uppercase;
     width: 17em;
+  }
+
+  .particles-js-canvas-el {
+    width: 98% !important;
+    height: 100% !important;
   }
 
   .hero-section .hero-description {
@@ -446,11 +502,25 @@ footer {
     padding: 10px;
   }
 
+  .program-section iframe {
+    width: 50em;
+    height: 25em;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
   .footer-flex p {
     font-size: 15px;
     line-height: 20px;
     font-weight: 600;
     color: #313030;
+  }
+
+  .attendee_count p {
+    font-size: 15px;
+    text-align: center;
+    color: white;
   }
 
   .hero-section .hero-description p {
@@ -504,6 +574,32 @@ footer {
     text-align: center;
     margin-bottom: 3em;
     display: block;
+  }
+
+  /* counter */
+  .attendee_count {
+    background: #1b3a4c;
+    padding: 2em 0;
+    width: 100%;
+  }
+
+  .attendee_count .counter_grid {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 5em;
+    border: 4px solid white;
+    margin: 0 15em;
+  }
+
+  .counter_grid .counter-list {
+    margin: 2em 0;
+  }
+
+  .attendee_count h2 {
+    font-size: 55px;
+    color: white;
+    font-weight: bolder;
   }
 
   /* Mentor Section */
