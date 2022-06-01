@@ -2,55 +2,63 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta prefix="og: http://ogp.me/ns#" property="og:title" content="CSS and JavaScript-Mentorship-project">
-    <meta prefix="og: http://ogp.me/ns#" property="og:description" content="A mentorship platform">
-    <meta prefix="og: http://ogp.me/ns#" property="og:image" content="https://denscholar.github.io/Mentorship-platform-capstone-project-module1/images/JavaScript-capstone.PNG">
+    <meta
+      prefix="og: http://ogp.me/ns#"
+      property="og:title"
+      content="CSS and JavaScript-Mentorship-project"
+    />
+    <meta
+      prefix="og: http://ogp.me/ns#"
+      property="og:description"
+      content="A mentorship platform"
+    />
+    <meta
+      prefix="og: http://ogp.me/ns#"
+      property="og:image"
+      content="https://denscholar.github.io/Mentorship-platform-capstone-project-module1/images/JavaScript-capstone.PNG"
+    />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/a70cf7601d.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/8e451d2cb2.js" crossorigin="anonymous"></script>
     <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
     <link rel="stylesheet" href="./css/home.css" />
-    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/form.css" />
     <title>Home Page</title>
   </head>
   <body>
-    <section class="header" >
+    <section class="header">
       <header class="header">
         <div class="top-bar">
           <ul>
+            <li>We are on social media 🥰</li>
             <li>
               <a href=""><i class="fab fa-facebook-f"></i></a>
             </li>
             <li>
               <a href=""><i class="fab fa-twitter"></i></a>
             </li>
-            <li><a href="">English</a></li>
-            <li><a href="">My Page</a></li>
-            <li><a href="">Log Out</a></li>
           </ul>
         </div>
         <!-- desktop menu -->
         <nav class="nav">
           <div class="logo">
-            <a href="./index.html"
-              ><h2>sied<span>HUB</span></h2></a
-            >
+            <a href="./index.html"><img src="./images/Siedi-Hub Logo 1.png" alt=""></a>
           </div>
           <div class="toggle-menu">
             <i class="fas fa-bars"></i>
           </div>
           <ul class="menu-desktop">
-            <li><a class="link active" href="./about.html">About</a></li>
-            <li><a class="link" href="">Programs</a></li>
-            <!-- <li><a class="link" href="">Join</a></li>
-            <li><a class="link" href="">Event</a></li>
-            <li><a class="link" href="">Blog</a></li> -->
-            <!-- <li><button class="btn-register" href="">Register Here</button></li> -->
-            <li><button id="eventbrite-widget-modal-trigger-331748738407" type="button" class="btn-register">Buy Tickets</button></li>
-            
+            <li><a class="link" href="./index.html">Home</a></li>
+            <li><a class="link" href="./about.html">Programs</a></li>
+          <li>
+              <button
+                id="eventbrite-widget-modal-trigger-331748738407"
+                type="button"
+                class="btn-register"
+              >
+              REGISTER HERE
+              </button>
+            </li>
           </ul>
         </nav>
         <!-- mobile menu -->
@@ -64,12 +72,15 @@
             <i class="far fa-window-close"></i>
           </div>
           <ul class="mobile-menu-bar">
-            <li><a class="nav-link active" href="./about.html">About</a></li>
-            <li><a class="nav-link" href="">Programs</a></li>
-            <!-- <li><a class="nav-link" href="">Join</a></li>
-            <li><a class="nav-link" href="">Event</a></li>
-            <li><a class="nav-link" href="">Blog</a></li> -->
-            <!-- <li><button id="eventbrite-widget-modal-trigger-331748738407" type="button" class="btn-register">Register here</button></li> -->
+            <li><a class="nav-link" href="">Home</a></li>
+            <li><a class="nav-link active" href="./about.html">Programs</a></li>
+            <li><button
+              id="eventbrite-widget-modal-trigger-331748738407"
+              type="button"
+              class="btn-register"
+            >
+            REGISTER HERE
+            </button></li>
           </ul>
         </nav>
       </header>
@@ -77,19 +88,15 @@
     <!-- Hero Section -->
     <section class="hero-section" id="particles-js">
       <div class="hero-header">
-        <h1 class="hero-title">
-          <span>Hello Nigeria!</span><br />Connecting developers with mentors
-        </h1>
+        <p class="theme">Unveiling an Innovation Hub</p>
+        
       </div>
       <div class="hero-description">
-        <p>
-          We believe that mentorship should be accessible to all people
-          regardless of location or financial standing.
-        </p>
+        <h1 class="hero-title">Working Towards Inclusive Development</h1>
+        <p class="tag">#SiedihubUnveiling</p>
       </div>
       <div class="find-dev">
-        <h2>Find a developer for live mentorship</h2>
-        <!-- <button type="button">REGISTER HERE</button> -->
+        <button type="button">REGISTER HERE</button>
       </div>
     </section>
     <!-- Attendees -->
@@ -112,18 +119,31 @@
           <p>Attendees</p>
         </div>
       </div>
+      <div class="twitter">
+        <p><i class="fa fa-arrow-circle-down" style="font-size:24px;color:red;"></i>Live Tweets</p>
+        <div class="twitter-container">
+          
+        </div>
+      </div>
     </section>
     <!-- Program Section -->
     <section class="program-section">
-      <h2>How to Find a Mentor</h2>
+      <h2>Stream our event here</h2>
       <p class="line"></p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/AQMeVZIkybg" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <div class="inner-div">
-        <p>Join CC Global Summit 2015</p>
+      <div class="stream">
+        <div>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/Ih2ZQ1Anfxc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="bar-code-inner-div">
+          <div class="barcode">
+            <img src="./images/barcode.png" alt="" />
+          </div>
+          <div class="inner-div">
+            <p>Participate using this barcode</p>
+          </div>
+        </div>
       </div>
-      <div class="inner-div2">
-        <p><a href="">See our whole mentorship programs</a></p>
-      </div>
+      
     </section>
     <!-- Mentor section -->
 
@@ -159,46 +179,69 @@
         />
       </div>
     </section>
-   
+
     <!-- Footer -->
     <footer>
       <div class="footer-flex">
-        <div class="logo">
-          <h2>find<span>MENTOR</span></h2>
+        <div class="footer-logo">
+          <img src="./images/Siedi-Hub Logo 1.png" alt="logo">
         </div>
-        <p>
-          We want to hear your thoughts! Feel free to join our Slack
-          Organization or send us an email at admin@findamentor.org
-        </p>
+        <div>
+          <p>We want to hear your thoughts! Feel free to reach out to us on<a href="#">&nbsp +234814598665</a>&nbsp or send us an email at<a href="#">&nbspadmin@findamentor.org</a></p>          
+        </div>
         
       </div>
     </footer>
 
-     <!-- Registration Modal -->
-     <div class="bg-modal">
+    <!-- Registration Modal -->
+    <div class="bg-modal">
       <div class="modal-content">
         <div class="close">+</div>
-        <form id="fs-frm" name="registration-form" accept-charset="utf-8" action="https://formspree.io/YOUR_FORM_ID" method="post">
+        <form
+          id="fs-frm"
+          name="registration-form"
+          accept-charset="utf-8"
+          action="https://formspree.io/YOUR_FORM_ID"
+          method="post"
+        >
           <div id="fs-frm-inputs">
             <label for="full-name">Full Name</label>
-            <input type="text" name="name" id="full-name" placeholder="Full Names" required="">
-            <!-- <label for="company">Company</label>
-            <input type="text" name="company" id="company" placeholder="Seltz" required=""> -->
+            <input
+              type="text"
+              name="name"
+              id="full-name"
+              placeholder="Full Names"
+              required=""
+            />
             <label for="email-address">Email Address</label>
-            <input type="email" name="_replyto" id="email-address" placeholder="email-address" required="">
+            <input
+              type="email"
+              name="_replyto"
+              id="email-address"
+              placeholder="email-address"
+              required=""
+            />
             <label for="message">Questions for our speakers? (Optional)</label>
-            <textarea rows="5" name="message" id="message" placeholder="Send questions in advance and we will cover them in the Q&A"></textarea>
-            <input type="hidden" name="_subject" id="email-subject" value="Registration Form Submission">
-            <input type="submit" class="button" value="Register">
+            <textarea
+              rows="5"
+              name="message"
+              id="message"
+              placeholder="Send questions in advance and we will cover them in the Q&A"
+            ></textarea>
+            <input
+              type="hidden"
+              name="_subject"
+              id="email-subject"
+              value="Registration Form Submission"
+            />
+            <input type="submit" class="button" value="Register" />
           </div>
         </form>
       </div>
-      
     </div>
 
     <script src="./particles.js"></script>
     <script src="./app_particles.js"></script>
     <script src="./app.js"></script>
-
   </body>
 </html>
