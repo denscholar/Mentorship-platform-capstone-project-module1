@@ -1,7 +1,13 @@
+/* eslint-disable no-console */
+/* eslint-disable func-names */
+/* eslint-disable vars-on-top */
 /* eslint-disable no-plusplus */
+
 const toggleBar = document.querySelector('.toggle-menu');
 const menuBar = document.querySelector('.hidden');
 const closeBar = document.querySelector('.close-mobile-menu');
+const navLink = document.querySelectorAll('.link');
+const currentPage = window.location.pathname;
 
 toggleBar.addEventListener('click', () => {
   if (menuBar.style.display === 'none') {
@@ -17,57 +23,143 @@ closeBar.addEventListener('click', () => {
   }
 });
 
+//  Adding active Class
+
+navLink.forEach((link) => {
+  if (link.href.includes(`${currentPage}`)) {
+    link.classList.add('active');
+  }
+});
+
 const data = [
   {
-    name: 'Dennis Akagha',
-    profileImage: './images/speakers/speaker1.png',
+    name: 'Amb Emmanuel Gabari',
+    profileImage: './images/speakers/DSC-9263.jpg',
     bgImage: './images/draught.PNG',
-    shortDesc: 'Neque esse modi, dolor quis assumenda delectus error',
+    shortDesc: 'Moderator',
     longDescr:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ipsam quae perspiciatis placeat odio laborum accusamus reiciendis? ',
+      'Gabari is a multi-award-winning TV and Radio Broadcaster that presents weekly shows on Shagalinku TV and Vision FM Kano. He is also the Executive Director of African Focus for Youth Development (AFFYD), an NGO that caters to the needs of youth, women and children.',
+    link: 'https://www.linkedin.com/in/amb-emmanuel-gabari-8b1067187/',
   },
   {
-    name: 'Felix Iziomoh',
-    profileImage: './images/speakers/speaker2.png',
+    name: 'Rt. Hon. Sir. Ude Oko Chukwu PhD:',
+    profileImage: './images/speakers/deputy.jpg',
     bgImage: './images/draught.PNG',
-    shortDesc: 'Neque esse modi, dolor quis assumenda delectus error',
+    shortDesc: 'Distinguished Special Guest of Honor',
     longDescr:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ipsam quae perspiciatis placeat odio laborum accusamus reiciendis? ',
+      'The deputy governor, Abia State, Nigeria ',
+    link: '',
+  },
+
+  {
+    name: ' Lady Vivien Oko Chukwu',
+    profileImage: './images/speakers/deputy-wife.jpg',
+    bgImage: './images/draught.PNG',
+    shortDesc: 'Distinguished Special Guest of Honor',
+    longDescr:
+      'Deputy Governor\'s, Abia State, Nigeria',
+    link: '',
   },
   {
-    name: 'Chidimma Azubuko',
-    profileImage: './images/speakers/speaker3.png',
+    name: 'Esther Agbon',
+    profileImage: './images/speakers/esther.jpg',
     bgImage: './images/draught.PNG',
-    shortDesc: 'Neque esse modi, dolor quis assumenda delectus error',
-    longDescr:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ipsam quae perspiciatis placeat odio laborum accusamus reiciendis? ',
+    shortDesc: 'special guest/speaker',
+    longDescr: 'Esther Agbon is a public health policy consultant with over 20 years’ experience supporting health policy, advocacy and planning program in Nigeria. Esther is a passionate advocate for Women and girls’ rights.',
+    link: 'https://www.linkedin.com/in/raymondukwa/',
   },
   {
-    name: 'Jane Doe',
-    profileImage: './images/speakers/speaker4.png',
+    name: 'Hon. Dr Kalu Ndukwe',
+    profileImage: './images/speakers/kalu.jpeg',
     bgImage: './images/draught.PNG',
-    shortDesc: 'Neque esse modi, dolor quis assumenda delectus error',
-    longDescr:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ipsam quae perspiciatis placeat odio laborum accusamus reiciendis? ',
+    shortDesc: 'Special Guest/speaker',
+    longDescr: 'Former Commissioner of Health, Abia State Ministry of Health Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ipsam quae perspiciatis placeat odio laborum accusamus reiciendis?',
+    link: '',
   },
   {
-    name: 'Scholastica Flaw',
-    profileImage: './images/speakers/speaker5.png',
+    name: 'Chinasa Imo',
+    profileImage: './images/speakers/chinasa.jpg',
     bgImage: './images/draught.PNG',
-    shortDesc: 'Neque esse modi, dolor quis assumenda delectus error',
+    shortDesc: 'Founder and Convener',
     longDescr:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ipsam quae perspiciatis placeat odio laborum accusamus reiciendis? ',
+      'Founder of SieDi-hub, Chinasa is an international development/policy strategist with over nine years’ experience working in the health development sector, she is strongly suited to managing not-for-profit programs that focuses on maternal, new-born, and adolescent reproductive health &amp; rights, systems strengthening, and building participatory processes.',
+    link: 'https://www.linkedin.com/in/chinasa-ude-imo/',
   },
   {
-    name: 'John Doe',
-    profileImage: './images/speakers/speaker6.png',
+    name: 'Mark Asonye',
+    profileImage: './images/speakers/mark.png',
     bgImage: './images/draught.PNG',
-    shortDesc: 'Neque esse modi, dolor quis assumenda delectus error',
+    shortDesc: 'Moderator',
     longDescr:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ipsam quae perspiciatis placeat odio laborum accusamus reiciendis? ',
+      'Talent development expert, life coach, on air personality at REAL 99.1fm, Aba, writer, political commentator, celebrated counselor, lover of God&#39;s word and founder of an online media outfit - BIGDEAL TALKS.',
+    link: '',
+  },
+  {
+    name: 'Ifegwu Ifeanyi Richard',
+    profileImage: './images/speakers/sino.webp',
+    bgImage: './images/draught.PNG',
+    shortDesc: 'Richkid Siino - Performing Art',
+    longDescr:
+      'Siino is an international afro-pop Star, Singer, Songwriter, performing art, from Nkporo in Ohafia Local Government Abia State, Nigeria.',
+    link: '',
+  },
+  {
+    name: 'Chima Raymond Ukwa',
+    profileImage: './images/speakers/raymond.jpg',
+    bgImage: './images/draught.PNG',
+    shortDesc: 'Special Guest/Panelist',
+    longDescr:
+      'Chima Raymond Ukwa is a leading Sustainable Development Advocate working on eliminating harmful traditional practices and violence against women and girls.',
+    link: 'https://www.linkedin.com/in/raymondukwa/',
+  },
+  {
+    name: 'Ifeoma Anisha Okenwa',
+    profileImage: './images/speakers/ifeoma.jpeg',
+    bgImage: './images/draught.PNG',
+    shortDesc: 'Brand Ambassador (Youth Inclusivity Program',
+    longDescr:
+      'Ifeoma Anisha Okenwa is a model, a health educator, a youth activist, and a health advocate who specializes in adolescents and Youth health. ',
+    link: 'https://www.linkedin.com/in/anisha-ifeoma-okenwa-a6365223a/',
+  },
+  {
+    name: 'Harshita Kaul',
+    profileImage: './images/speakers/kaul.jpg',
+    bgImage: './images/draught.PNG',
+    shortDesc: 'Leading community Health Improvement Research',
+    longDescr:
+      'Harshita Kaul is a Doctoral Researcher, pursuing her PhD in Fundamental Biology of Ageing and Ageing Related Disorders, pecifically focusing on mitochondrial dysfunction and diabetes, obesity and lifestyle interventions in Cologne Graduate School of Ageing / EIT Health Ageing PhD School, Germany.',
+    link: 'https://www.linkedin.com/in/harshita-kaul-95340255/',
+  },
+  {
+    name: 'Precious David Youngman',
+    profileImage: './images/speakers/Precious David Youngman.jpg',
+    bgImage: './images/draught.PNG',
+    shortDesc: 'Panelist',
+    longDescr:
+      'Precious is a dietitian by profession from the school of Natural Health Science, United Kingdom, she also holds a higher Diploma in diabetes risk awareness, holds a prestigious UK level 7 extended Diploma in Strategic Management.',
+    link: '',
+  },
+  {
+    name: 'Rejoice Amaka Ukah',
+    profileImage: './images/speakers/rejoice.jpg',
+    bgImage: './images/draught.PNG',
+    shortDesc: 'Moderator',
+    longDescr:
+      'Rejoice Amaka is a gender activist, a girl child education advocate, a visionary and media personality, and the Executive Director of ChuksIcon&#39;s World initiative and Icon’s Concept',
+    link: 'https://www.linkedin.com/in/rejoice-amaka-7415b1239/',
+  },
+  {
+    name: 'Barrister Sam Hart',
+    profileImage: './images/speakers/sam.jpg',
+    bgImage: './images/draught.PNG',
+    shortDesc: 'Special Guest/Panelist',
+    longDescr:
+      'Sam Hart Is a lawyer, Communicator, an ACUMEN Fellow, and the Chancellor at Sam Hart Center for Strategic Leadership. He is the Current Director General of Abia State Marketing and  Quality Management Agency, and the Special Advisor to the Abia State Governor on Strategic Communications.',
+    link: '',
   },
 ];
 
+// create a template
 const partner = document.querySelector('.partner');
 const body = document.querySelectorAll('body');
 const container = document.createElement('div');
@@ -76,7 +168,7 @@ container.className = 'featured-mentor-section';
 
 const title = document.createElement('h2');
 title.className = 'mentor-title';
-title.textContent = 'Featured Mentor';
+title.textContent = 'Featured Speakers and Guest';
 container.appendChild(title);
 
 const line = document.createElement('p');
@@ -90,64 +182,69 @@ container.appendChild(grid);
 const button = document.createElement('button');
 button.className = 'see-more';
 button.type = 'button';
+button.textContent = 'See More Guest';
 container.appendChild(button);
 
-const seeMoreText = document.createElement('h3');
-seeMoreText.textContent = 'More';
-button.appendChild(seeMoreText);
+// const seeMoreText = document.createElement('h3');
+// button.appendChild(seeMoreText);
 
 const icon = document.createElement('i');
 icon.className = 'fas fa-chevron-down';
-seeMoreText.appendChild(icon);
+button.appendChild(icon);
 
 const mentorsData = () => {
   for (let i = 0; i < data.length; i++) {
-    const newMentors = `
-  <div class="mentors-grid-items">
-      <div class="img-wrapper">
-        <img class="img-draught" src="${data[i].bgImage}" alt="background image" />
-        <img class="img-speaker" src="${data[i].profileImage}"alt="mentor image" />
+    const gridItems = `
+      <div class="grid-items-speakers">
+          <div class="img-wrapper">
+            <img class="img-draught" src="${data[i].bgImage}" alt="background image" />
+            <img class="img-speaker" src="${data[i].profileImage}"alt="mentor image" />
+          </div>
+          <div class="mentor-profile">
+            <h3>${data[i].name}</h3>
+            <p class="profile">${data[i].shortDesc}</p>
+            <p class="line"></p>
+            <p class="works">${data[i].longDescr}</p>
+            <h4><a href="${data[i].link}"></a>${data[i].link === '' ? '' : 'Visit profile'}</h4>
+          </div>
       </div>
-      <div class="mentor-profile">
-        <h3>${data[i].name}</h3>
-        <p class="profile">${data[i].shortDesc}</p>
-        <p class="line"></p>
-        <p class="works">${data[i].longDescr}</p>
-      </div>
-  </div>`;
-    const actualMentors = document.createElement('div');
-    actualMentors.innerHTML = newMentors;
-    grid.appendChild(actualMentors);
+      `;
+    const newContainer = document.createElement('div');
+    newContainer.className = 'mentors-grid-items';
+    newContainer.innerHTML = gridItems;
+    grid.appendChild(newContainer);
   }
 };
 
-const mentorsData2 = () => {
-  for (let i = 0; i < data.length - 4; i++) {
-    const newMentors = `
-  <div class="mentors-grid-items">
-      <div class="img-wrapper">
-        <img class="img-draught" src="${data[i].bgImage}" alt="background image" />
-        <img class="img-speaker" src="${data[i].profileImage}"alt="mentor image" />
-      </div>
-      <div class="mentor-profile">
-        <h3>${data[i].name}</h3>
-        <p class="profile">${data[i].shortDesc}</p>
-        <p class="line"></p>
-        <p class="works">${data[i].longDescr}</p>
-      </div>
-  </div>`;
-    const actualMentors = document.createElement('div');
-    actualMentors.innerHTML = newMentors;
-    grid.appendChild(actualMentors);
+mentorsData();
+
+// see more functionality
+const seeMore = document.querySelector('.see-more');
+let currentItem = 4;
+
+seeMore.addEventListener('click', () => {
+  const boxes = [...document.querySelectorAll('.featured-mentor-section .mentors-grid .mentors-grid-items')];
+  for (let i = currentItem; i < currentItem + 4; i++) {
+    boxes[i].style.display = 'inline-block';
   }
+  currentItem += 3;
+  console.log(currentItem);
+
+  if (currentItem >= boxes.length - 1) {
+    seeMore.style.display = 'none';
+  }
+});
+
+// eventbright
+
+const exampleCallback = function () {
+  console.log('Order complete!');
 };
 
-const screeSizes = () => {
-  if (window.innerWidth < 768) {
-    mentorsData2();
-  } else if (window.innerWidth > 768) {
-    mentorsData();
-  }
-};
-
-screeSizes();
+window.EBWidgets.createWidget({
+  widgetType: 'checkout',
+  eventId: '331748738407',
+  modal: true,
+  modalTriggerElementId: 'eventbrite-widget-modal-trigger-331748738407',
+  onOrderComplete: exampleCallback,
+});

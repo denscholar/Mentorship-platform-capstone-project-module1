@@ -101,7 +101,7 @@ body {
 
 .hero-section {
   padding: 15px;
-  margin-bottom: 25px;
+  margin: 0 auto 25px auto;
 }
 
 .hero-section .hero-header h1 {
@@ -129,10 +129,16 @@ body {
 }
 
 .footer-flex p {
+  text-align: center;
   font-size: 12px;
   line-height: 18px;
   font-weight: 600;
   color: #313030;
+}
+
+.footer-flex img {
+  display: none;
+  height: 5em;
 }
 
 .event-item1 p {
@@ -222,10 +228,9 @@ body {
 }
 
 .past-event .desc {
-  text-align: center;
   padding: 20px;
-  font-size: 12px;
-  line-height: 18px;
+  font-size: 13px;
+  line-height: 22px;
 }
 
 .event-flex {
@@ -233,7 +238,7 @@ body {
   flex-direction: column;
   text-align: center;
   row-gap: 15px;
-  padding: 22px;
+  padding: 15px 0;
 }
 
 .event-flex .event-item1 {
@@ -333,19 +338,39 @@ body {
   column-gap: 20px;
 }
 
-.footer-flex img {
-  height: 5em;
-}
-
 .logo span {
   font-family: "COCOGOOSE", sans-serif;
   color: #ec5242;
   font-size: 22px;
 }
 
+/* table */
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+}
+
+#customers td,
+#customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even) { background-color: #f2f2f2; }
+
+#customers tr:hover { background-color: #ddd; }
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04aa6d;
+  color: white;
+}
+
 /* Media Querie */
 
-@media (min-width: 768px) {
+@media (min-width: 960px) {
   body {
     background: none;
   }
@@ -398,7 +423,7 @@ body {
 
   .header .top-bar {
     background-color: #272a31;
-    padding: 5px 175px;
+    padding: 8px 175px;
     height: 2.5em;
     display: block;
   }
@@ -428,13 +453,27 @@ body {
     box-shadow: 5px 5px 50px #aaa;
   }
 
+  .footer-flex a {
+    color: white;
+  }
+
   .nav ul li:last-child a {
     border: 3px solid #ec5242;
     padding: 10px;
   }
 
+  .logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
   .nav .logo {
     display: block;
+  }
+
+  .logo img {
+    width: 12rem;
   }
 
   .logo span {
@@ -459,13 +498,13 @@ body {
 
   .hero-description {
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     margin: 0 20em;
   }
 
   .hero-description p {
     font-size: 18px !important;
-    padding: 20px !important;
+    padding: 10px !important;
     line-height: 30px !important;
   }
 
@@ -485,7 +524,7 @@ body {
   }
 
   .footer-flex p {
-    font-size: 15px;
+    font-size: 13px;
     line-height: 20px;
     font-weight: 600;
     color: white;
@@ -503,6 +542,12 @@ body {
 
   .past-event .desc {
     font-size: 15px;
+    padding: 15px 170px;
+    line-height: 30px;
+  }
+
+  .past-event .agenda {
+    padding: 15px 170px;
   }
 
   .past-event .event-flex {
@@ -548,9 +593,44 @@ body {
 
   .footer-flex img {
     height: 5em;
+    display: block;
   }
 
   .footer-flex .logo h2 {
     color: white;
+  }
+
+  /* table */
+
+  #customers {
+    margin: 15px 170px;
+  }
+
+  #customers .time {
+    width: 15%;
+  }
+
+  #customers .topic .response {
+    width: 50%;
+  }
+
+  #customers tr {
+    line-height: 40px;
+  }
+
+  #customers td {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+
+  .footer-logo img {
+    width: 20rem;
+  }
+
+  .top-bar li {
+    color: whitesmoke;
+    font-size: 12px;
+    padding: 0;
   }
 }
