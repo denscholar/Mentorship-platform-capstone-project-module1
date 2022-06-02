@@ -58,7 +58,7 @@ const data = [
     name: ' Lady Vivien Oko Chukwu',
     profileImage: './images/speakers/deputy-wife.jpg',
     bgImage: './images/draught.PNG',
-    shortDesc: 'Wife of the Deputy governor, Abia State.',
+    shortDesc: 'Wife of the Deputy Governor, Abia State.',
     longDescr:
       'Deputy Governor\'s, Abia State, Nigeria',
     link: '',
@@ -67,7 +67,7 @@ const data = [
     name: 'Esther Agbon',
     profileImage: './images/speakers/esther.jpg',
     bgImage: './images/draught.PNG',
-    shortDesc: 'special guest/speaker',
+    shortDesc: 'Special Guest/Speaker',
     longDescr: 'Esther Agbon is a public health policy consultant with over 20 years’ experience supporting health policy, advocacy and planning program in Nigeria. Esther is a passionate advocate for Women and girls’ rights.',
     link: 'https://www.linkedin.com/in/raymondukwa/',
   },
@@ -75,7 +75,7 @@ const data = [
     name: 'Hon. Dr Kalu Ndukwe',
     profileImage: './images/speakers/kalu.jpeg',
     bgImage: './images/draught.PNG',
-    shortDesc: 'Special Guest/speaker',
+    shortDesc: 'Special Guest/Speaker',
     longDescr: 'Former Commissioner of Health, Abia State Ministry of Health.',
     link: '',
   },
@@ -98,6 +98,15 @@ const data = [
     link: '',
   },
   {
+    name: 'Precious David Youngman',
+    profileImage: './images/speakers/Precious David Youngman.jpg',
+    bgImage: './images/draught.PNG',
+    shortDesc: 'Panelist',
+    longDescr:
+      'Precious is a dietitian by profession from the school of Natural Health Science, United Kingdom, she also holds a higher Diploma in diabetes risk awareness, holds a prestigious UK level 7 extended Diploma in Strategic Management.',
+    link: '',
+  },
+  {
     name: 'Chima Raymond Ukwa',
     profileImage: './images/speakers/raymond.jpg',
     bgImage: './images/draught.PNG',
@@ -107,10 +116,19 @@ const data = [
     link: 'https://www.linkedin.com/in/raymondukwa/',
   },
   {
+    name: 'Barrister Sam Hart',
+    profileImage: './images/speakers/sam.jpg',
+    bgImage: './images/draught.PNG',
+    shortDesc: 'Special Guest/Panelist',
+    longDescr:
+      'Sam Hart Is a lawyer, Communicator, an ACUMEN Fellow, and the Chancellor at Sam Hart Center for Strategic Leadership. He is the Current Director General of Abia State Marketing and  Quality Management Agency, and the Special Advisor to the Abia State Governor on Strategic Communications.',
+    link: '',
+  },
+  {
     name: 'Ifeoma Anisha Okenwa',
     profileImage: './images/speakers/ifeoma.jpeg',
     bgImage: './images/draught.PNG',
-    shortDesc: 'Brand Ambassador (Youth Inclusivity Program',
+    shortDesc: 'Brand Ambassador - Youth Inclusivity Program',
     longDescr:
       'Ifeoma Anisha Okenwa is a model, a health educator, a youth activist, and a health advocate who specializes in adolescents and Youth health. ',
     link: 'https://www.linkedin.com/in/anisha-ifeoma-okenwa-a6365223a/',
@@ -124,15 +142,7 @@ const data = [
       'Harshita Kaul is a Doctoral Researcher, pursuing her PhD in Fundamental Biology of Ageing and Ageing Related Disorders, pecifically focusing on mitochondrial dysfunction and diabetes, obesity and lifestyle interventions in Cologne Graduate School of Ageing / EIT Health Ageing PhD School, Germany.',
     link: 'https://www.linkedin.com/in/harshita-kaul-95340255/',
   },
-  {
-    name: 'Precious David Youngman',
-    profileImage: './images/speakers/Precious David Youngman.jpg',
-    bgImage: './images/draught.PNG',
-    shortDesc: 'Panelist',
-    longDescr:
-      'Precious is a dietitian by profession from the school of Natural Health Science, United Kingdom, she also holds a higher Diploma in diabetes risk awareness, holds a prestigious UK level 7 extended Diploma in Strategic Management.',
-    link: '',
-  },
+
   {
     name: 'Rejoice Amaka Ukah',
     profileImage: './images/speakers/rejoice.jpg',
@@ -142,15 +152,7 @@ const data = [
       'Rejoice Amaka is a gender activist, a girl child education advocate, a visionary and media personality, and the Executive Director of ChuksIcon&#39;s World initiative and Icon’s Concept',
     link: 'https://www.linkedin.com/in/rejoice-amaka-7415b1239/',
   },
-  {
-    name: 'Barrister Sam Hart',
-    profileImage: './images/speakers/sam.jpg',
-    bgImage: './images/draught.PNG',
-    shortDesc: 'Special Guest/Panelist',
-    longDescr:
-      'Sam Hart Is a lawyer, Communicator, an ACUMEN Fellow, and the Chancellor at Sam Hart Center for Strategic Leadership. He is the Current Director General of Abia State Marketing and  Quality Management Agency, and the Special Advisor to the Abia State Governor on Strategic Communications.',
-    link: '',
-  },
+
 ];
 
 // create a template
