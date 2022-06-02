@@ -26,10 +26,11 @@
 .hero-section {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/partners/event-image.PNG") no-repeat center center;
   background-color: #4e4d4d;
+  background-size: cover;
   background-repeat: no-repeat;
   padding: 60px 25px 0 25px;
   position: relative;
-  height: 22em;
+  height: 23em;
 }
 
 .particles-js-canvas-el {
@@ -188,7 +189,7 @@
   height: 50%;
   display: flex;
   justify-content: center;
-  margin: 0 auto;
+  margin: 1.5em auto;
 }
 
 .find-dev {
@@ -339,8 +340,10 @@
 }
 
 .featured-mentor-section .mentors-grid .mentors-grid-items:nth-child(2),
-.featured-mentor-section .mentors-grid .mentors-grid-items:nth-child(3) {
-  margin-bottom: 1.5em;
+.featured-mentor-section .mentors-grid .mentors-grid-items:nth-child(3), 
+.featured-mentor-section .mentors-grid .mentors-grid-items:nth-child(4), 
+.featured-mentor-section .mentors-grid .mentors-grid-items:nth-child(6) {
+  margin-bottom: 1.8em;
 }
 
 .mentor-profile h3 {

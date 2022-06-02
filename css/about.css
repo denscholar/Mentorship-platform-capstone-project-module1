@@ -45,6 +45,17 @@ body {
   color: black;
 }
 
+.mobile-menu-bar .nav-link button{
+  padding: 0.8rem;
+  font-size: 0.9rem;
+  margin-top: 1.5em;
+  font-weight: bold;
+  outline: none;
+  border-radius: 4px;
+  border: none;
+  background: rgb(238,192,45);
+}
+
 .hidden {
   display: none;
 }
