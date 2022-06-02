@@ -24,7 +24,7 @@
 }
 
 .hero-section {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/img1234.jpg") no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/partners/event-image.PNG") no-repeat center center;
   background-color: #4e4d4d;
   background-repeat: no-repeat;
   padding: 60px 25px 0 25px;
@@ -98,7 +98,7 @@
   position: fixed;
   left: 0;
   top: 0;
-  background-color: rgb(53, 52, 52);
+  background-color: rgb(204, 203, 203);
   width: 100%;
   height: 100%;
   z-index: 10;
@@ -111,7 +111,7 @@
 .menu-bar .nav-link {
   font-size: 20px;
   padding: 0 30px;
-  color: white;
+  color: black;
 }
 
 .hidden {
@@ -133,6 +133,10 @@
   position: absolute;
   left: 145px;
   top: 50px;
+}
+
+.logo-mobile img {
+  width: 10rem;
 }
 
 .logo-mobile h2 {
@@ -159,10 +163,10 @@
   width: 50px;
   align-self: flex-end;
   font-size: 40px;
-  margin-top: 20px;
+  margin-top: 30px;
   margin-left: 20px;
   padding: 0.5em;
-  color: rgb(255, 255, 255);
+  color: black;
   cursor: pointer;
   z-index: 1;
 }
@@ -637,7 +641,6 @@ footer {
 
   /* counter */
   .attendee_count {
-    background: #1b3a4c;
     padding: 2em 0;
     width: 100%;
     display: flex;
@@ -649,6 +652,7 @@ footer {
     display: flex;
     justify-content: center;
     flex-direction: row;
+    gap: 5rem;
 
     /* gap: 5em; */
     border: 4px solid white;
@@ -685,7 +689,7 @@ footer {
   }
 
   .counter_grid .counter-list {
-    margin: 2em 0;
+    margin: 0.5em 0;
     padding: 0 1.5em;
   }
 
@@ -722,7 +726,7 @@ footer {
 
   .partner {
     width: 100%;
-    height: 40vh;
+    height: 45vh;
     background-color: #272a31;
     text-align: center;
     display: flex;
@@ -735,13 +739,15 @@ footer {
     justify-content: center;
     align-items: center;
     width: 70%;
-    margin: 35px auto;
+    margin: 0 auto;
     column-gap: 30px;
+    z-index: 0;
   }
 
   .logo-img {
-    width: 120px;
-    height: 30px;
+    width: 280px;
+    height: 150px;
+    object-fit: cover;
   }
 
   /* See more nutton */
@@ -757,8 +763,13 @@ footer {
     background-color: #d3d3d3;
   }
 
+  .footer-logo {
+    display: flex;
+  }
+
   .footer-logo img {
     width: 20rem;
+    display: flex;
   }
 
   .footer-flex {

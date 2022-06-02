@@ -12,24 +12,23 @@
 }
 
 body {
-  background: url("../images/mobile_intro_bg.png") no-repeat;
-  background-position: 60% -9%;
+  color: #fdfdfd;
 }
 
 /* Header section */
 
 .header {
-  padding: 25px;
+  padding: 15px;
 }
 
 .menu-bar {
-  display: flex;
+  display: none;
   flex-direction: column;
   row-gap: 30px;
   position: fixed;
   left: 0;
   top: 0;
-  background-color: rgb(53, 52, 52);
+  background-color: rgb(204, 203, 203);
   width: 100%;
   height: 100%;
   z-index: 10;
@@ -37,12 +36,13 @@ body {
 
 .menu-bar li {
   padding: 20px 0;
+  color: black;
 }
 
 .menu-bar .nav-link {
   font-size: 20px;
   padding: 0 30px;
-  color: white;
+  color: black;
 }
 
 .hidden {
@@ -74,10 +74,15 @@ body {
   color: #ec5242;
 }
 
+.logo-mobile img {
+  width: 10rem;
+}
+
 .toggle-menu .fa-bars {
   position: absolute;
-  left: 22px;
-  font-size: 40px;
+  right: 22px;
+  top: 20px;
+  font-size: 35px;
   color: #272a31;
 }
 
@@ -86,10 +91,10 @@ body {
   width: 50px;
   align-self: flex-end;
   font-size: 40px;
-  margin-top: 20px;
+  margin-top: 30px;
   margin-left: 20px;
   padding: 0.5em;
-  color: rgb(255, 255, 255);
+  color: black;
   cursor: pointer;
 }
 
@@ -100,16 +105,23 @@ body {
 /* Hero Section */
 
 .hero-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/conference-1024x554.jpg");
+  height: 30vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
   padding: 15px;
   margin: 0 auto 25px auto;
 }
 
 .hero-section .hero-header h1 {
-  color: #cc1102;
-  font-size: 32px;
+  color: white;
+  font-size: 15px;
+  font-weight: 300;
   font-family: "COCOGOOSE", sans-serif;
-  line-height: 40px;
   text-align: center;
+  margin-top: 3rem;
 }
 
 .hero-section .hero-span {
@@ -129,11 +141,15 @@ body {
 }
 
 .footer-flex p {
-  text-align: center;
-  font-size: 12px;
+  font-size: 13.5px;
   line-height: 18px;
   font-weight: 600;
-  color: #313030;
+  padding: 0 0.5rem;
+  color: white;
+}
+
+.footer-flex a {
+  color: white;
 }
 
 .footer-flex img {
@@ -178,7 +194,7 @@ body {
 
 .info {
   background-color: white;
-  padding: 20px 20px 50px 20px;
+  margin: 2rem;
 }
 
 .info .title {
@@ -228,7 +244,6 @@ body {
 }
 
 .past-event .desc {
-  padding: 20px;
   font-size: 13px;
   line-height: 22px;
 }
@@ -328,7 +343,7 @@ body {
 /* footer */
 
 .footer-flex {
-  background-color: white;
+  background-color: #272a31;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -344,37 +359,70 @@ body {
   font-size: 22px;
 }
 
-/* table */
-#customers {
-  font-family: Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
+/* Event Agenda */
+
+.event-catalogue {
+  text-align: center;
+  padding: 0.5rem 0;
 }
 
-#customers td,
-#customers th {
-  border: 1px solid #ddd;
-  padding: 8px;
+.event-catalogue .title {
+  padding: 0.5rem;
+  font-size: 30px;
+  font-weight: bolder;
 }
 
-#customers tr:nth-child(even) { background-color: #f2f2f2; }
+.event-catalogue .venue-title {
+  font-size: 12px;
+  padding: 0.5rem 4rem;
+  line-height: 20px;
+}
 
-#customers tr:hover { background-color: #ddd; }
+.event-catalogue .sub-title {
+  line-height: 22px;
+}
 
-#customers th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: #04aa6d;
-  color: white;
+.event-catalogue .date-title {
+  font-weight: bold;
+  color: red;
+}
+
+.event-container {
+  padding: 1.5rem 0.9rem;
+}
+
+.event-container .section-title .control .toggle-control {
+  font-size: 18px;
+  padding: 0.7rem 0 0;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.event-container .section-title .control .fa-chevron-right {
+  font-size: 20px;
+  padding: 0 0.5rem;
+}
+
+.event-container .section-title .control .time-content {
+  padding: 0.5rem 1.5rem 1rem;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.event-container .section-title .content-wrapper .content {
+  font-size: 16px;
+  line-height: 25px;
+  padding: 0 1.5rem 1.5rem;
+}
+.section-title { border-bottom: 1px solid rgb(180, 180, 179); }
+
+.show {
+  display: none;
 }
 
 /* Media Querie */
 
 @media (min-width: 960px) {
-  body {
-    background: none;
-  }
-
   .toggle-menu .fa-bars {
     display: none;
   }
@@ -485,15 +533,18 @@ body {
   /* Hero Section */
 
   .hero-section {
-    background: linear-gradient(rgba(233, 233, 233, 0.5), rgba(211, 211, 211, 0.5)), url("../images/about_bg.png");
-    background-repeat: no-repeat;
-    background-size: contain;
+    height: 50vh;
   }
 
-  .hero-header h1 {
-    padding: 3em 12em 0 10em;
-    text-transform: uppercase;
+  .hero-section .hero-header h1 {
+    color: white;
+    font-size: 28px;
+    font-family: "COCOGOOSE", sans-serif;
+    line-height: 43px;
     text-align: center;
+    margin-top: 3rem;
+    padding: 1em 12em 0 10em;
+    text-transform: uppercase;
   }
 
   .hero-description {
@@ -523,6 +574,16 @@ body {
     opacity: 0.7;
   }
 
+  .about-us {
+    padding: 15px 170px;
+    line-height: 27px;
+  }
+
+  .about-us .title {
+    font-weight: bold;
+    padding: 0.7rem 0;
+  }
+
   .footer-flex p {
     font-size: 13px;
     line-height: 20px;
@@ -536,18 +597,28 @@ body {
     line-height: 30px;
   }
 
+  .past-event {
+    padding: 15px 170px;
+  }
+
   .past-event .title {
     font-size: 25px;
   }
 
   .past-event .desc {
     font-size: 15px;
-    padding: 15px 170px;
     line-height: 30px;
+    padding: 0.8rem 0;
+  }
+
+  .past-event .date-event,
+  .time-event,
+  .venue {
+    padding: 0.5rem 0;
   }
 
   .past-event .agenda {
-    padding: 15px 170px;
+    padding: 0.5rem 0;
   }
 
   .past-event .event-flex {
@@ -600,10 +671,14 @@ body {
     color: white;
   }
 
+  .footer-logo {
+    display: block;
+  }
+
   /* table */
 
   #customers {
-    margin: 15px 170px;
+    margin: 1.5rem 0;
   }
 
   #customers .time {
@@ -632,5 +707,51 @@ body {
     color: whitesmoke;
     font-size: 12px;
     padding: 0;
+  }
+
+  /* Event Agenda */
+
+  .event-catalogue .title {
+    padding: 0.5rem;
+    font-size: 35px;
+    font-weight: bolder;
+  }
+
+  .event-catalogue .venue-title {
+    font-size: 18px;
+    padding: 0.5rem 4rem;
+    line-height: 20px;
+  }
+
+  .event-catalogue .sub-title {
+    line-height: 25px;
+    font-size: 18px;
+  }
+
+  .event-catalogue .date-title {
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .event-container {
+    padding: 1.5rem 10rem;
+  }
+
+  .event-container .section-title .control .toggle-control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+  }
+
+  .event-container .section-title .control .fa-chevron-right {
+    font-size: 20px;
+    padding: 0 1rem;
+  }
+
+  .event-container .section-title .control .time-content {
+    padding: 1.5rem 1.5rem 1rem;
+    font-size: 15px;
+    font-weight: 400;
   }
 }

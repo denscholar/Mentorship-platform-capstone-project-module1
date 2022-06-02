@@ -3,24 +3,18 @@
 /* eslint-disable vars-on-top */
 /* eslint-disable no-plusplus */
 
-const toggleBar = document.querySelector('.toggle-menu');
-const menuBar = document.querySelector('.hidden');
-const closeBar = document.querySelector('.close-mobile-menu');
+const toggleBar = document.querySelector('.fa-bars');
+const mobileNav = document.querySelector('.menu-bar');
+const closeBar = document.querySelector('.fa-window-close');
 const navLink = document.querySelectorAll('.link');
 const currentPage = window.location.pathname;
 
 toggleBar.addEventListener('click', () => {
-  if (menuBar.style.display === 'none') {
-    menuBar.style.display = 'flex';
-  } else {
-    menuBar.style.display = 'none';
-  }
+  mobileNav.style.display = 'flex';
 });
 
 closeBar.addEventListener('click', () => {
-  if (menuBar.style.display === 'flex') {
-    menuBar.style.display = 'none';
-  }
+  mobileNav.style.display = 'none';
 });
 
 //  Adding active Class
@@ -42,12 +36,21 @@ const data = [
     link: 'https://www.linkedin.com/in/amb-emmanuel-gabari-8b1067187/',
   },
   {
+    name: 'Mark Asonye',
+    profileImage: './images/speakers/mark.png',
+    bgImage: './images/draught.PNG',
+    shortDesc: 'Moderator',
+    longDescr:
+      'Talent development expert, life coach, on air personality at REAL 99.1fm, Aba, writer, political commentator, celebrated counselor, lover of God&#39;s word and founder of an online media outfit - BIGDEAL TALKS.',
+    link: '',
+  },
+  {
     name: 'Rt. Hon. Sir. Ude Oko Chukwu PhD:',
     profileImage: './images/speakers/deputy.jpg',
     bgImage: './images/draught.PNG',
     shortDesc: 'Distinguished Special Guest of Honor',
     longDescr:
-      'The deputy governor, Abia State, Nigeria ',
+      'The Deputy Governor, Abia State, Nigeria ',
     link: '',
   },
 
@@ -55,7 +58,7 @@ const data = [
     name: ' Lady Vivien Oko Chukwu',
     profileImage: './images/speakers/deputy-wife.jpg',
     bgImage: './images/draught.PNG',
-    shortDesc: 'Distinguished Special Guest of Honor',
+    shortDesc: 'Wife of the Deputy governor, Abia State.',
     longDescr:
       'Deputy Governor\'s, Abia State, Nigeria',
     link: '',
@@ -73,7 +76,7 @@ const data = [
     profileImage: './images/speakers/kalu.jpeg',
     bgImage: './images/draught.PNG',
     shortDesc: 'Special Guest/speaker',
-    longDescr: 'Former Commissioner of Health, Abia State Ministry of Health Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ipsam quae perspiciatis placeat odio laborum accusamus reiciendis?',
+    longDescr: 'Former Commissioner of Health, Abia State Ministry of Health.',
     link: '',
   },
   {
@@ -84,15 +87,6 @@ const data = [
     longDescr:
       'Founder of SieDi-hub, Chinasa is an international development/policy strategist with over nine years’ experience working in the health development sector, she is strongly suited to managing not-for-profit programs that focuses on maternal, new-born, and adolescent reproductive health &amp; rights, systems strengthening, and building participatory processes.',
     link: 'https://www.linkedin.com/in/chinasa-ude-imo/',
-  },
-  {
-    name: 'Mark Asonye',
-    profileImage: './images/speakers/mark.png',
-    bgImage: './images/draught.PNG',
-    shortDesc: 'Moderator',
-    longDescr:
-      'Talent development expert, life coach, on air personality at REAL 99.1fm, Aba, writer, political commentator, celebrated counselor, lover of God&#39;s word and founder of an online media outfit - BIGDEAL TALKS.',
-    link: '',
   },
   {
     name: 'Ifegwu Ifeanyi Richard',
@@ -143,7 +137,7 @@ const data = [
     name: 'Rejoice Amaka Ukah',
     profileImage: './images/speakers/rejoice.jpg',
     bgImage: './images/draught.PNG',
-    shortDesc: 'Moderator',
+    shortDesc: 'Brand ambassador Sisters’ Connect.',
     longDescr:
       'Rejoice Amaka is a gender activist, a girl child education advocate, a visionary and media personality, and the Executive Director of ChuksIcon&#39;s World initiative and Icon’s Concept',
     link: 'https://www.linkedin.com/in/rejoice-amaka-7415b1239/',
@@ -185,9 +179,6 @@ button.type = 'button';
 button.textContent = 'See More Guest';
 container.appendChild(button);
 
-// const seeMoreText = document.createElement('h3');
-// button.appendChild(seeMoreText);
-
 const icon = document.createElement('i');
 icon.className = 'fas fa-chevron-down';
 button.appendChild(icon);
@@ -205,7 +196,7 @@ const mentorsData = () => {
             <p class="profile">${data[i].shortDesc}</p>
             <p class="line"></p>
             <p class="works">${data[i].longDescr}</p>
-            <h4><a href="${data[i].link}"></a>${data[i].link === '' ? '' : 'Visit profile'}</h4>
+            <h4><a href="${data[i].link}" target="_blank" rel="noopener noreferrer"></a>${data[i].link === '' ? '' : 'Visit profile'}</h4>
           </div>
       </div>
       `;
@@ -243,8 +234,8 @@ const exampleCallback = function () {
 
 window.EBWidgets.createWidget({
   widgetType: 'checkout',
-  eventId: '331748738407',
+  eventId: '355091898427',
   modal: true,
-  modalTriggerElementId: 'eventbrite-widget-modal-trigger-331748738407',
+  modalTriggerElementId: 'eventbrite-widget-modal-trigger-355091898427',
   onOrderComplete: exampleCallback,
 });
