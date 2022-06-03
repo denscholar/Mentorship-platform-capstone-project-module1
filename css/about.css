@@ -765,4 +765,8 @@ body {
     font-size: 15px;
     font-weight: 400;
   }
+
+  .top-bar li .fa-linkedin-in, .fa-youtube{
+    color: white;
+  }
 }

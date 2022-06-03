@@ -198,7 +198,7 @@ const mentorsData = () => {
             <p class="profile">${data[i].shortDesc}</p>
             <p class="line"></p>
             <p class="works">${data[i].longDescr}</p>
-            <h4><a href="${data[i].link}" target="_blank" rel="noopener noreferrer"></a>${data[i].link === '' ? '' : 'Visit profile'}</h4>
+            <h4><a class="profile-link" href="${data[i].link}" target="_blank" rel="noopener noreferrer">${data[i].link === '' ? '' : 'Visit profile'}</a></h4>
           </div>
       </div>
       `;
