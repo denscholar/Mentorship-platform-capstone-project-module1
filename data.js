@@ -55,12 +55,12 @@ const data = [
     link: 'https://www.linkedin.com/in/esther-agbon-4a6a7141/',
   },
   {
-    name: 'Hon. Dr Kalu Ndukwe',
-    profileImage: './images/speakers/kalu.jpeg',
+    name: 'Dr. Ejike Oji ',
+    profileImage: './images/speakers/ejike.jpeg',
     bgImage: './images/draught.PNG',
     shortDesc: 'Special Guest/Speaker',
-    longDescr: 'Former Commissioner of Health, Abia State Ministry of Health.',
-    link: '',
+    longDescr: 'Senior Special Advisor to the FCT Minister on Health and Hospital Management. He is also the President - Dr Ejike Oji Community Development Foundation.',
+    link: 'https://www.linkedin.com/in/ejike-oji-b3038213/',
   },
   {
     name: 'Chinasa Imo',
